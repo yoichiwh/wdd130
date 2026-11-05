@@ -1,5 +1,20 @@
+nav {
+    background-color: darkblue;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    display: block;
+    padding: 20px;
+}
+
 main {
     max-width: 840px;
+}
+
+h1 {
+    color: darkblue;
 }
 
 main img {
@@ -8,15 +23,6 @@ main img {
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
-}
-
-img {
-    width: 150px;
-    height: auto;
-}
-
-p {
-    padding: 0px;
 }
 
 aside {
@@ -34,19 +40,8 @@ aside img {
     height: auto;
 }
 
-h1 {
-    color: darkblue;
-}
-
-nav {
-    background-color: darkblue;
-    padding: 10px;
-}
-
-nav a {
-    color: white;
-    display: block;
-    padding: 20px;
+p {
+    padding: 0px;
 }
 
 footer {
