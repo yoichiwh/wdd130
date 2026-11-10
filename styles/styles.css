@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
 :root {
     --heading-background-color: darkblue;
     --heading-text-color: white;
@@ -38,11 +43,13 @@ main img {
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
+    margin: 0 0 1rem 1rem;
 }
 
 aside {
     width: 20rem;
     text-align: center;
+    position: relative;
 }
 
 aside img {
@@ -52,9 +59,9 @@ aside img {
 
 aside h2 {
     position: absolute;
-    top: 420px;
-    left: 150px;
-    color: #ddd;
+    top: 55px;
+    left: 130px;
+    color: white;
 }
 
 p {
@@ -74,4 +81,9 @@ footer {
     padding: 1rem;
     background-color: #ddd;
     color: #000;
+}
+
+.indent {
+    padding-left: 2rem;
+
 }
