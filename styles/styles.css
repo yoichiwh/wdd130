@@ -2,6 +2,7 @@
     --heading-background-color: darkblue;
     --heading-text-color: white;
     --h1-text-color: darkblue;
+    --boreder-color: black;
 
 }
 
@@ -27,7 +28,7 @@ h1 {
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid var(--boreder-color);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -53,6 +54,6 @@ p {
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: 1px solid var(--boreder-color);
     text-align: center;
 }
