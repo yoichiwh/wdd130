@@ -78,5 +78,5 @@ article {
     float: right;
     width: 125px;
     margin: 10px;
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--secondary-color);
 }
