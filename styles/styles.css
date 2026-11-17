@@ -13,33 +13,42 @@ body {
     --heading-background-color: darkblue;
     --heading-text-color: white;
     --h1-text-color: darkblue;
-    --boreder-color: black;
-
+    --border-color: black;
 }
 
 nav {
     background-color: var(--heading-background-color);
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
-    color: var(--heading-text-color);
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--heading-text-color);
 }
 
 main {
-    max-width: 840px;
+    grid-column: 2;
+    margin: 0;
 }
 
 h1 {
     color: var(--h1-text-color);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid var(--boreder-color);
+    border: 1px solid var(--border-color);
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
@@ -47,43 +56,75 @@ main img {
 }
 
 aside {
-    width: 20rem;
+    grid-column: 1;
+    grid-row: 1;
     text-align: center;
     position: relative;
+    width: 100%;
+
 }
 
 aside img {
-    width: 200px;
+    width: 100%;
     height: auto;
+    display: block;
 }
 
 aside h2 {
     position: absolute;
-    top: 55px;
-    left: 130px;
+    top: 35px;
+    left: 37%;
     color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+aside p {
+    text-align: left;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
 }
 
 p {
-    padding: 0px;
+    padding: 0;
+    line-height: 1.5;
 }
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid var(--boreder-color);
+    border-top: 1px solid var(--border-color);
     text-align: center;
+    padding: 1rem 0;
 }
 
 /* Class Selectors */
 .box {
-    margin: 1rem;
     border: 1px solid rgb(0 0 0 / 10%);
     padding: 1rem;
     background-color: #ddd;
     color: #000;
 }
 
+main .box {
+    margin-top: 1.5rem;
+    clear: both;
+}
+
 .indent {
     padding-left: 2rem;
+}
 
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 2rem;
+    align-items: start;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
